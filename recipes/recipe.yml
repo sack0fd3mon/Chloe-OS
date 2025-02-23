@@ -41,11 +41,13 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     replace:
-      - gnome-shell
-      - mutter
-      - mutter-common
-      - xorg-x11-server-Xwayland
-      - gdm
+      - https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
+      packages:
+        - gnome-shell
+        - mutter
+        - mutter-common
+        - xorg-x11-server-Xwayland
+        - gdm
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
