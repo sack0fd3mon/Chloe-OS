@@ -23,6 +23,19 @@ modules:
     install:
       - micro
       - starship
+      - corectrl 
+      - fish 
+      - glib2-devel 
+      - gnome-power-manager 
+      - gnome-terminal 
+      - gnome-tweaks 
+      - goverlay 
+      - lm_sensors 
+      - openssl 
+      - pipx 
+      - sassc 
+      - smartmontools 
+      - waydroid
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -34,10 +47,107 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
+        - ca.desrt.dconf-editor
+        - com.github.IsmaelMartinez.teams_for_linux
+        - com.github.PintaProject.Pinta
+        - com.github.hugolabe.Wike
+        - com.github.tchx84.Flatseal
+        - com.github.wwmm.easyeffects
+        - com.github.xournalpp.xournalpp
+        - com.heroicgameslauncher.hgl
+        - com.mattjakeman.ExtensionManager
+        - com.obsproject.Studio.Plugin.GStreamerVaapi
+        - com.obsproject.Studio.Plugin.Gstreamer
+        - com.obsproject.Studio.Plugin.OBSVkCapture
+        - com.transmissionbt.Transmission
+        - com.usebottles.bottles
+        - com.valvesoftware.Steam
+        - de.schmidhuberj.tubefeeder
+        - dev.bragefuglseth.Keypunch
+        - dev.qwery.AddWater
+        - dev.vencord.Vesktop
+        - fr.handbrake.ghb
+        - io.github.Foldex.AdwSteamGtk
+        - io.github.celluloid_player.Celluloid
+        - io.github.flattool.Warehouse
+        - io.github.thetumultuousunicornofdarkness.cpu-x
+        - io.github.ungoogled_software.ungoogled_chromium
+        - io.gitlab.librewolf-community
+        - io.missioncenter.MissionCenter
+        - net.agalwood.Motrix
+        - org.audacityteam.Audacity
+        - org.audacityteam.Audacity.Codecs
+        - org.avidemux.Avidemux
+        - org.fedoraproject.KDE5Platform
+        - org.fedoraproject.LinuxAudio.Plugins.Calf
+        - org.fedoraproject.LinuxAudio.Plugins.LSP
+        - org.fedoraproject.LinuxAudio.Plugins.MDA
+        - org.fedoraproject.LinuxAudio.Plugins.ZamPlugins
+        - org.fedoraproject.MediaWriter
+        - org.fedoraproject.Platform
+        - org.fedoraproject.Platform.GL.default
+        - org.fedoraproject.Platform.Locale
+        - org.freedesktop.LinuxAudio.Plugins.TAP
+        - org.freedesktop.LinuxAudio.Plugins.TAP
+        - org.freedesktop.LinuxAudio.Plugins.swh
+        - org.freedesktop.LinuxAudio.Plugins.swh
+        - org.freedesktop.Platform
+        - org.freedesktop.Platform
+        - org.freedesktop.Platform.Compat.i386
+        - org.freedesktop.Platform.Compat.i386
+        - org.freedesktop.Platform.GL.default
+        - org.freedesktop.Platform.GL.default
+        - org.freedesktop.Platform.GL.default
+        - org.freedesktop.Platform.GL.default
+        - org.freedesktop.Platform.GL32.default
+        - org.freedesktop.Platform.GL32.default
+        - org.freedesktop.Platform.GL32.default
+        - org.freedesktop.Platform.VulkanLayer.MangoHud
+        - org.freedesktop.Platform.VulkanLayer.MangoHud
+        - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+        - org.freedesktop.Platform.VulkanLayer.vkBasalt
+        - org.freedesktop.Platform.ffmpeg-full
+        - org.freedesktop.Platform.ffmpeg-full
+        - org.freedesktop.Platform.ffmpeg_full.i386
+        - org.freedesktop.Platform.openh264
+        - org.freedesktop.Platform.openh264
+        - org.gnome.Aisleriot
+        - org.gnome.Decibels
+        - org.gnome.Evince
+        - org.gnome.Papers
+        - org.gnome.NautilusPreviewer
+        - org.gnome.TwentyFortyEight
+        - org.gnome.baobab
+        - org.gnome.gitlab.dqpb.GMetronome
+        - org.gtk.Gtk3theme.adw-gtk3
+        - org.gtk.Gtk3theme.adw-gtk3-dark
+        - org.hydrogenmusic.Hydrogen
+        - org.kde.Platform
+        - org.kde.Platform
+        - org.kde.PlatformTheme.QGnomePlatform
+        - org.kde.WaylandDecoration.QAdwaitaDecorations
+        - org.kde.kdenlive
+        - org.kde.krita
+        - org.libreoffice.LibreOffice
         - org.mozilla.firefox
+        - org.musescore.MuseScore
+        - org.nickvision.tagger
+        - org.prismlauncher.PrismLauncher
+        - org.soundconverter.SoundConverter
+        - org.videolan.VLC
+        - org.videolan.VLC
+        - org.winehq.Wine.gecko
+        - org.winehq.Wine.mono
+        - org.x.Warpinator
+        - org.zdoom.GZDoom
+        - us.zoom.Zoom
         - org.gnome.Loupe
+        - org.gimp.GIMP
       remove:
         - org.gnome.eog
+        - org.gnome.Connections
+        - org.gnome.Contacts
+        - org.gnome.Maps
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
