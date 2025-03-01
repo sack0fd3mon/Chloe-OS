@@ -34,6 +34,7 @@ modules:
       - pipx
       - sassc
       - smartmontools
+      - android-tools
       - waydroid
     remove:
       # example: removing firefox (in favor of the flatpak)
